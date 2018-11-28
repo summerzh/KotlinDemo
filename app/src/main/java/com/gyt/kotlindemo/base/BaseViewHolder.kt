@@ -10,4 +10,5 @@ import android.view.View
  */
 class BaseViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
 
+
 }

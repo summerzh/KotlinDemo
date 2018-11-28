@@ -1,11 +1,13 @@
-package com.gyt.kotlindemo
+package com.gyt.kotlindemo.ui.activity
 
-import android.widget.Toast
+import com.gyt.kotlindemo.ui.adapter.HomeAdapter
+import com.gyt.kotlindemo.R
 import com.gyt.kotlindemo.base.BaseActivity
 import com.gyt.kotlindemo.beans.MeiZiBean
 import com.gyt.kotlindemo.http.ExceptionHandle
 import com.gyt.kotlindemo.http.HttpManager
 import com.gyt.kotlindemo.http.RxUtils
+import com.gyt.kotlindemo.toast
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : BaseActivity() {
@@ -29,7 +31,7 @@ class MainActivity : BaseActivity() {
 
     override fun initEvent() {
         homeAdapter?.setOnItemClickListener {
-            Toast.makeText(this, it.who, Toast.LENGTH_SHORT).show()
+            toast(it.who)
         }
     }
 }
