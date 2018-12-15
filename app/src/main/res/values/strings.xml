@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">KotlinDemo</string>
+    <string name="dialog_title">提示</string>
+    <string name="dialog_message">保存该图片？</string>
+    <string name="dialog_position_button_desc">确定</string>
+    <string name="dialog_negative_button_desc">取消</string>
+    <string name="title_picture_preview">图片预览</string>
 </resources>
